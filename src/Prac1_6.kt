@@ -1,13 +1,9 @@
-import java.util.Scanner
-
 fun main() {
-    val scanner = Scanner(System.`in`)
+    print("Enter the first number: ")
+    val num1 = readln().toDouble()
 
-    print("Enter the first number:")
-    val num1 = scanner.nextDouble()
-
-    print("Enter the second number:")
-    val num2 = scanner.nextDouble()
+    print("Enter the second number: ")
+    val num2 = readln().toDouble()
 
     println("Addition of $num1 & $num2 is: ${add(num1, num2)}")
     println("Subtraction of $num1 & $num2 is: ${subtract(num1, num2)}")

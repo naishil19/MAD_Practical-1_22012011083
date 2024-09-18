@@ -1,5 +1,3 @@
-import java.util.Scanner
-
 data class Student(
     val name: String,
     val enrollmentNo: String,
@@ -8,20 +6,20 @@ data class Student(
     val batch: String,
     val age: Int
 )
+
 fun main() {
-    val scanner = Scanner(System.`in`)
-    print("Enter student's name:")
-    val name = scanner.nextLine()
-    print("Enter student's enrollment number:")
-    val enrollmentNo = scanner.nextLine()
-    print("Enter student's branch:")
-    val branch = scanner.nextLine()
-    print("Enter student's college name:")
-    val collegeName = scanner.nextLine()
-    print("Enter student's batch:")
-    val batch = scanner.nextLine()
-    print("Enter student's age:")
-    val age = scanner.nextInt()
+    print("Enter student's name: ")
+    val name = readlnOrNull().orEmpty()
+    print("Enter student's enrollment number: ")
+    val enrollmentNo = readlnOrNull().orEmpty()
+    print("Enter student's branch: ")
+    val branch = readlnOrNull().orEmpty()
+    print("Enter student's college name: ")
+    val collegeName = readlnOrNull().orEmpty()
+    print("Enter student's batch: ")
+    val batch = readlnOrNull().orEmpty()
+    print("Enter student's age: ")
+    val age = readlnOrNull()?.toIntOrNull() ?: 0
 
     val student = Student(name, enrollmentNo, branch, collegeName, batch, age)
 

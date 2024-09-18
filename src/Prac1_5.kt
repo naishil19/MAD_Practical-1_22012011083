@@ -1,10 +1,6 @@
-import java.util.Scanner
-
 fun main() {
-    val scanner = Scanner(System.`in`)
-
-    print("Enter Month Number:")
-    val monthNumber = scanner.nextInt()
+    print("Enter Month Number: ")
+    val monthNumber = readlnOrNull()?.toIntOrNull()
 
     val monthName = when (monthNumber) {
         1 -> "January"

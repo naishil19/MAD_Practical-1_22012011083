@@ -1,10 +1,6 @@
-import java.util.Scanner
-
 fun main() {
-    val scanner = Scanner(System.`in`)
-
-    print("Enter a number:")
-    val number = scanner.nextInt()
+    print("Enter a number: ")
+    val number = readln().toInt()
 
     println("Factorial of $number = ${factorial(number)}")
 }
@@ -12,4 +8,3 @@ fun main() {
 fun factorial(n: Int): Int {
     return if (n == 1) 1 else n * factorial(n - 1)
 }
-
