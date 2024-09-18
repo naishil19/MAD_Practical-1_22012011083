@@ -1,21 +1,20 @@
 //1. Printing Arrays using Different Methods
-import java.util.Arrays
-
 fun main() {
-    val array1 = arrayOf(20, 100, 30, 70,50)
+    val array1 = arrayOf(20, 100, 30, 70, 50)
     val array2 = arrayOf(0, 0, 0, 0, 0)
     val array3 = Array(8) { it }
     val array4 = IntArray(5)
     val array5 = intArrayOf(19, 42, 9, 21, 23, 4)
     val array6 = arrayOf(intArrayOf(1, 9), intArrayOf(4, 2), intArrayOf(2, 1))
 
-    println("Array1: ${Arrays.deepToString(array1)}")
+    println("Array1: ${array1.contentDeepToString()}")
     println("Array2: ${array2.contentDeepToString()}")
     println("Array3: ${array3.joinToString()}")
     println("Array4: ${array4.joinToString()}")
     println("Array5: ${array5.joinToString()}")
     println("Array6: ${array6.contentDeepToString()}")
 }
+
 //******************************************************************************************************
 //2. Manipulating Arrays with Loops
 //fun main() {

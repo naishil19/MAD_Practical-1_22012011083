@@ -1,15 +1,12 @@
-import java.util.Scanner
-
 fun main() {
-    val scanner = Scanner(System.`in`)
     val numbers = ArrayList<Int>()
 
-    print("Enter the number of elements:")
-    val n = scanner.nextInt()
+    print("Enter the number of elements: ")
+    val n = readln().toInt()
 
-    print("Enter the elements:")
+    print("Enter the elements: ")
     for (i in 0 until n) {
-        numbers.add(scanner.nextInt())
+        numbers.add(readln().toInt())
     }
 
     val maxNumber = numbers.maxOrNull()
